@@ -4,6 +4,7 @@ namespace App\Models;
 
 // use Illuminate\Contracts\Auth\MustVerifyEmail;
 use App\Models\Result;
+use App\Models\Subscription;
 use Laravel\Sanctum\HasApiTokens;
 use Spatie\Permission\Traits\HasRoles;
 use Illuminate\Notifications\Notifiable;
@@ -48,5 +49,9 @@ class User extends Authenticatable
     public function userResults()
     {
         return $this->hasMany(Result::class);
+    }
+
+    public function subscription(){
+        return $this->hasMany(Subscription::class);
     }
 }

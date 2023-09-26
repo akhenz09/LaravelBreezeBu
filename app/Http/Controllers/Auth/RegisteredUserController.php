@@ -70,11 +70,5 @@ class RegisteredUserController extends Controller
         return redirect(RouteServiceProvider::HOME);
     }
 
-    protected function registered(Request $request, $user)
-    {
-    // Set approval message in session
-    session()->flash('approval_message', 'Your account has been created. It will be approved by an administrator before you can access the application.');
-
-    return redirect($this->redirectPath());
-    }
+    
 }

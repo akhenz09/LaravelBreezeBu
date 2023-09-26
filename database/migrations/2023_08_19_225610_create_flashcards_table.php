@@ -12,11 +12,11 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('flashcards', function (Blueprint $table) {
-        $table->id();
-        $table->string('question');
-        $table->text('answer');
-        $table->timestamps();
-        });
+            $table->id();
+            $table->string('question');
+            $table->text('answer');
+            $table->timestamps();
+            });
     }
 
     /**

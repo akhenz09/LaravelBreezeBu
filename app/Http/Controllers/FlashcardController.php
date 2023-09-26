@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Category;
 use App\Models\Flashcard;
 use App\Models\UserProgress;
 use Illuminate\Http\Request;
@@ -16,7 +17,8 @@ class FlashcardController extends Controller
 
 public function create()
 {
-    return view('admin.flashcards.create');
+    $flashcards = Flashcard::all();
+    return view('admin.flashcards.create', compact('flashcards'));
 }
 
 public function store(Request $request)
@@ -26,7 +28,13 @@ public function store(Request $request)
 
     Flashcard::create($data);
 
-    return redirect()->route('admin.flashcards.create'); // Correct route name
+    return redirect()->route('flashcards.create'); // Correct route name
+}
+
+public function edit($id)
+{
+    $flashcard = Flashcard::findOrFail($id);
+    return view('admin.flashcards.edit', compact('flashcard'));
 }
 
 

@@ -20,6 +20,9 @@
     transform-style: preserve-3d;
     margin: 0 auto;
     transition: transform 1s;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 25px;
+    font-weight:bold;
   }
 
 .card-inner {
@@ -148,19 +151,7 @@ h3, p {
 	font-family: 'Open Sans', sans-serif;
 }
 
-button {
-	border: none;
-	outline: none;
-	padding: 10px 20px;
-	border-radius: 50px;
-	color: #333;
-	background: #fff;
-	box-shadow: 0 3px 20px 0 #0000003b;
-}
 
-button:hover{
-	cursor: pointer;
-}
 
 /*Category*/
 .subject-chooser {

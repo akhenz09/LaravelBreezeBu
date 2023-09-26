@@ -2,27 +2,27 @@
 
     <header>
         <div class="overlay">
-            <h1>Flashcard</h1>
+            <div class="subject-chooser">
+                <ul>
+                    @foreach ($flashcards as $flashcard)
+                        <li>
+                            <b><a href="#" class="flashcard-link categorycard" data-question="{{ $flashcard->question }}" data-answer="{{ $flashcard->answer }}">
+                                {{ $flashcard->id }}
+                            </a></b>
+                        </li>
+                    @endforeach
+                </ul>
+            </div>
         </div>
     </header>
 
-    <h1>Flashcards List</h1>
-    <div class="subject-chooser">
-        <ul>
-            @foreach ($flashcards as $flashcard)
-                <li>
-                    <a href="#" class="flashcard-link categorycard" data-question="{{ $flashcard->question }}" data-answer="{{ $flashcard->answer }}">
-                        {{ $flashcard->id }}
-                    </a>
-                </li>
-            @endforeach
-        </ul>
-    </div>
+
     <div class="gridcontainer">
         <div class="subject-content">
             <div class="right-align">
                 <a class="px-4 py-2 bg-green-500 text-white rounded hover:bg-green-600" id="navButton" href="#">Next</a>
             </div>
+            <center>
             <div class="container">
                 <div class="card" id="flashcard">
                     <div class="card-inner" id="cardInner">
@@ -35,6 +35,7 @@
                     </div>
                 </div>
             </div>
+        </center>
             <div class="btncontainer mt-4">
                 <button id="correctButton" class="px-4 py-2 bg-green-500 text-white rounded hover:bg-green-600">Correct</button>
                 <button id="incorrectButton" class="px-4 py-2 bg-red-500 text-white rounded hover:bg-red-600">Incorrect</button>

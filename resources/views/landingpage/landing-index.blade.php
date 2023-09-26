@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-    <title>Lugx Gaming Shop HTML5 Template</title>
+    <title>AMC PODCLASS</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -30,6 +30,8 @@ https://templatemo.com/tm-589-lugx-gaming
 
 <body>
 
+
+
   <!-- ***** Preloader Start ***** -->
   <div id="js-preloader" class="js-preloader">
     <div class="preloader-inner">
@@ -50,13 +52,13 @@ https://templatemo.com/tm-589-lugx-gaming
             <div class="col-12">
                 <nav class="main-nav">
                     <!-- ***** Logo Start ***** -->
-                    <a href="/Home" class="logo">
+                    <a href="/" class="logo">
                         <h1><img src="assets/images/AMCLogo.png" alt="" style="width: 50px; height: auto;">&nbsp;AMC PODCLASS</h1>
                     </a>
                     <!-- ***** Logo End ***** -->
                     <!-- ***** Menu Start ***** -->
                     <ul class="nav">
-                      <li><a href="/Home" class="active">Home</a></li>
+                      <li><a href="/" class="active">Home</a></li>
                       <li><a href="/shop">About</a></li>
                       <li><a href="/product">Programs</a></li>
                       <li><a href="/contact">Contact Us</a></li>
@@ -163,8 +165,8 @@ https://templatemo.com/tm-589-lugx-gaming
       <div class="row">
         <div class="col-lg-6">
           <div class="section-heading">
-            <h6>Trending</h6>
-            <h2>Trending Games</h2>
+            <h6>Lecturer</h6>
+            <h2>Tutors</h2>
           </div>
         </div>
         <div class="col-lg-6">
@@ -176,11 +178,11 @@ https://templatemo.com/tm-589-lugx-gaming
           <div class="item">
             <div class="thumb">
               <a href="product-details.html"><img src="assets/images/trending-01.jpg" alt=""></a>
-              <span class="price"><em>$28</em>$20</span>
+              {{--<span class="price"><em>$28</em>$20</span>--}}
             </div>
             <div class="down-content">
               <span class="category">Action</span>
-              <h4>Assasin Creed</h4>
+              <h4>Tutor Name</h4>
               <a href="product-details.html"><i class="fa fa-shopping-bag"></i></a>
             </div>
           </div>
@@ -189,11 +191,11 @@ https://templatemo.com/tm-589-lugx-gaming
           <div class="item">
             <div class="thumb">
               <a href="product-details.html"><img src="assets/images/trending-02.jpg" alt=""></a>
-              <span class="price">$44</span>
+              {{--<span class="price"><em>$28</em>$20</span>--}}
             </div>
             <div class="down-content">
               <span class="category">Action</span>
-              <h4>Assasin Creed</h4>
+              <h4>Tutor Name</h4>
               <a href="product-details.html"><i class="fa fa-shopping-bag"></i></a>
             </div>
           </div>
@@ -202,7 +204,7 @@ https://templatemo.com/tm-589-lugx-gaming
           <div class="item">
             <div class="thumb">
               <a href="product-details.html"><img src="assets/images/trending-03.jpg" alt=""></a>
-              <span class="price"><em>$64</em>$44</span>
+              {{--<span class="price"><em>$28</em>$20</span>--}}
             </div>
             <div class="down-content">
               <span class="category">Action</span>
@@ -215,11 +217,11 @@ https://templatemo.com/tm-589-lugx-gaming
           <div class="item">
             <div class="thumb">
               <a href="product-details.html"><img src="assets/images/trending-04.jpg" alt=""></a>
-              <span class="price">$32</span>
+              {{--<span class="price"><em>$28</em>$20</span>--}}
             </div>
             <div class="down-content">
               <span class="category">Action</span>
-              <h4>Assasin Creed</h4>
+              <h4>Tutor Name</h4>
               <a href="product-details.html"><i class="fa fa-shopping-bag"></i></a>
             </div>
           </div>
@@ -233,8 +235,8 @@ https://templatemo.com/tm-589-lugx-gaming
       <div class="row">
         <div class="col-lg-6">
           <div class="section-heading">
-            <h6>TOP GAMES</h6>
-            <h2>Most Played</h2>
+            <h6>TOP COURSES</h6>
+            <h2>Most Enrolled</h2>
           </div>
         </div>
         <div class="col-lg-6">
@@ -245,11 +247,11 @@ https://templatemo.com/tm-589-lugx-gaming
         <div class="col-lg-2 col-md-6 col-sm-6">
           <div class="item">
             <div class="thumb">
-              <a href="product-details.html"><img src="assets/images/top-game-01.jpg" alt=""></a>
+              <a href="product-details.html"><img src="assets/images/categories-05.jpg" alt=""></a>
             </div>
             <div class="down-content">
-                <span class="category">Adventure</span>
-                <h4>Assasin Creed</h4>
+                {{--<span class="category">Adventure</span>--}}
+                <h4>Course Name</h4>
                 <a href="product-details.html">Explore</a>
             </div>
           </div>
@@ -257,11 +259,11 @@ https://templatemo.com/tm-589-lugx-gaming
         <div class="col-lg-2 col-md-6 col-sm-6">
           <div class="item">
             <div class="thumb">
-              <a href="product-details.html"><img src="assets/images/top-game-02.jpg" alt=""></a>
+              <a href="product-details.html"><img src="assets/images/categories-05.jpg" alt=""></a>
             </div>
             <div class="down-content">
-                <span class="category">Adventure</span>
-                <h4>Assasin Creed</h4>
+                {{--<span class="category">Adventure</span>--}}
+                <h4>Course Name</h4>
                 <a href="product-details.html">Explore</a>
             </div>
           </div>
@@ -269,11 +271,11 @@ https://templatemo.com/tm-589-lugx-gaming
         <div class="col-lg-2 col-md-6 col-sm-6">
           <div class="item">
             <div class="thumb">
-              <a href="product-details.html"><img src="assets/images/top-game-03.jpg" alt=""></a>
+              <a href="product-details.html"><img src="assets/images/categories-05.jpg" alt=""></a>
             </div>
             <div class="down-content">
-                <span class="category">Adventure</span>
-                <h4>Assasin Creed</h4>
+                {{--<span class="category">Adventure</span>--}}
+                <h4>Course Name</h4>
                 <a href="product-details.html">Explore</a>
             </div>
           </div>
@@ -281,11 +283,11 @@ https://templatemo.com/tm-589-lugx-gaming
         <div class="col-lg-2 col-md-6 col-sm-6">
           <div class="item">
             <div class="thumb">
-              <a href="product-details.html"><img src="assets/images/top-game-04.jpg" alt=""></a>
+              <a href="product-details.html"><img src="assets/images/categories-05.jpg" alt=""></a>
             </div>
             <div class="down-content">
-                <span class="category">Adventure</span>
-                <h4>Assasin Creed</h4>
+                {{--<span class="category">Adventure</span>--}}
+                <h4>Course Name</h4>
                 <a href="product-details.html">Explore</a>
             </div>
           </div>
@@ -293,11 +295,11 @@ https://templatemo.com/tm-589-lugx-gaming
         <div class="col-lg-2 col-md-6 col-sm-6">
           <div class="item">
             <div class="thumb">
-              <a href="product-details.html"><img src="assets/images/top-game-05.jpg" alt=""></a>
+              <a href="product-details.html"><img src="assets/images/categories-05.jpg" alt=""></a>
             </div>
             <div class="down-content">
-                <span class="category">Adventure</span>
-                <h4>Assasin Creed</h4>
+                {{--<span class="category">Adventure</span>--}}
+                <h4>Course Name</h4>
                 <a href="product-details.html">Explore</a>
             </div>
           </div>
@@ -305,11 +307,11 @@ https://templatemo.com/tm-589-lugx-gaming
         <div class="col-lg-2 col-md-6 col-sm-6">
           <div class="item">
             <div class="thumb">
-              <a href="product-details.html"><img src="assets/images/top-game-06.jpg" alt=""></a>
+              <a href="product-details.html"><img src="assets/images/categories-05.jpg" alt=""></a>
             </div>
             <div class="down-content">
-                <span class="category">Adventure</span>
-                <h4>Assasin Creed</h4>
+                {{--<span class="category">Adventure</span>--}}
+                <h4>Course Name</h4>
                 <a href="product-details.html">Explore</a>
             </div>
           </div>
@@ -379,12 +381,12 @@ https://templatemo.com/tm-589-lugx-gaming
             <div class="row">
               <div class="col-lg-12">
                 <div class="section-heading">
-                  <h6>Our Shop</h6>
-                  <h2>Go Pre-Order Buy & Get Best <em>Prices</em> For You!</h2>
+                  <h6>Our Courses</h6>
+                  <h2>Lorem ipsum dolor consectetur adipiscing, <em>Prices</em> For You!</h2>
                 </div>
                 <p>Lorem ipsum dolor consectetur adipiscing, sed do eiusmod tempor incididunt.</p>
                 <div class="main-button">
-                  <a href="shop.html">Shop Now</a>
+                  <a href="shop.html">Enroll Now!</a>
                 </div>
               </div>
             </div>
@@ -395,8 +397,8 @@ https://templatemo.com/tm-589-lugx-gaming
             <div class="row">
               <div class="col-lg-12">
                 <div class="section-heading">
-                  <h6>NEWSLETTER</h6>
-                  <h2>Get Up To $100 Off Just Buy <em>Subscribe</em> Newsletter!</h2>
+                  <h6>Announcements</h6>
+                  <h2>Get Up To $100 Off Just  <em>Subscribe</em> Powermock!</h2>
                 </div>
                 <div class="search-input">
                   <form id="subscribe" action="#">
@@ -415,7 +417,7 @@ https://templatemo.com/tm-589-lugx-gaming
   <footer>
     <div class="container">
       <div class="col-lg-12">
-        <p>Copyright © 2048 LUGX Gaming Company. All rights reserved. &nbsp;&nbsp; <a rel="nofollow" href="https://templatemo.com" target="_blank">Design: TemplateMo</a></p>
+        <p>Copyright © 2023 J.I. Magano Educational Consultancy Services. All rights reserved.</p>
       </div>
     </div>
   </footer>

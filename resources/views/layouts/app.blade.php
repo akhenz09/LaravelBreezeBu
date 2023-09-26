@@ -12,20 +12,19 @@
         <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
 
         <!-- Scripts -->
-        @vite(['resources/css/app.css', 'resources/js/app.js', '/resources/js/flashcard.js', '/resources/css/flashcard.css'])
+        @vite(['resources/css/app.css', 'resources/js/app.js','resources/js/exam-timer.js',])
     </head>
 
     <body class="font-sans antialiased">
         @role('user')
-        <div class="min-h-screen bg-gray-100 dark:bg-gray-900">
-            @include('layouts.navigation')
+    <div class="min-h-screen bg-gray-100 dark:bg-gray-900">
+        @include('layouts.newuser')
 
-            <!-- Page Content -->
-            <main>
-
-            </main>
-        </div>
-        @endrole
+        <!-- Page Content -->
+        <main>
+        </main>
+    </div>
+@else
     @role('admin')
         <div class="min-h-screen bg-gray-100 dark:bg-gray-900">
             @include('layouts.admin')
@@ -33,5 +32,16 @@
             <main>
             </main>
         </div>
+    @else
+        <div class="min-h-screen bg-gray-100 dark:bg-gray-900">
+            @include('layouts.navigation')
+
+            <!-- Page Content -->
+            <main>
+            </main>
+        </div>
     @endrole
+@endrole
+@stack('scripts')
+    </body>
 </html>

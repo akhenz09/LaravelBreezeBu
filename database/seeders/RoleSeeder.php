@@ -15,11 +15,6 @@ class RoleSeeder extends Seeder
     public function run(): void
     {
 
-
-
-
-
-
         $AMCPodclassRole = Role::create(['name' => 'AMC Podclass']);
         Role::create(['name' => 'Active Recall']);
         Role::create(['name' => 'On the Go']);

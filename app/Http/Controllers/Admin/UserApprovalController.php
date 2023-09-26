@@ -3,31 +3,32 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Models\User;
-use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
 class UserApprovalController extends Controller
 {
     public function index()
-{
-    $pendingUsers = User::where('is_approved', false)
-        ->whereHas('roles', function ($query) {
-            $query->where('name', '<>', 'admin'); // Exclude users with the admin role
-        })
-        ->get();
+    {
+        $users = User::all();
+        $pendingUsers = User::where('is_approved', false)
+            ->whereHas('roles', function ($query) {
+                $query->where('name', '<>', 'admin');
+            })
+            ->with('roles') // Eager load the roles relationship
+            ->get();
 
-    return view('admin.user_approval.index', compact('pendingUsers'));
-}
+        return view('admin.user_approval.index', compact('users', 'pendingUsers'));
+    }
 
 public function approve(User $user)
 {
     $user->is_approved = true;
     $user->save();
 
-    // Assign role 'user' using Spatie Permissions
-    $user->assignRole('user');
+    // Revoke role 'user' using Spatie Permissions
+    $user->removeRole('user');
 
-    return redirect()->route('admin.user_approval.index')
+    return redirect()->route('user_approval.index')
         ->with('success', 'User approved successfully.');
 }
 
@@ -39,4 +40,6 @@ public function reject(User $user)
     return redirect()->route('admin.user_approval.index')
         ->with('success', 'User rejected and removed.');
 }
+
+
 }

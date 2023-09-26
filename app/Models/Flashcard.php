@@ -24,4 +24,5 @@ protected $fillable = ['question', 'answer'];
 
 }
 
+
 }

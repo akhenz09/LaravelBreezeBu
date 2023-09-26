@@ -5,21 +5,16 @@
                 <a href="{{ url('/dashboard') }}" class="font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Dashboard</a>
             @else
                 <a href="{{ route('login') }}" class="font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Log in</a>
-                <a href="/Home" class="ml-4 font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Home</a>
+                <a href="/" class="ml-4 font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Home</a>
             @endauth
         </div>
     @endif
 </div>
 <x-guest-layout>
-    <div class="container">
-        @if(session('approval_message'))
-            <div class="alert alert-info">
-                {{ session('approval_message') }}
-            </div>
-        @endif
+
         <div class="wrapper">
             <div class="title">
-               Login Form
+               Registration Form
             </div>
     <form method="POST" action="{{ route('register') }}">
         @csrf

@@ -1,8 +1,18 @@
 <x-app-layout>
-    <h1>Flashcards List</h1>
-    <ul>
-        @foreach ($flashcards as $flashcard)
-            <li><a href="{{ route('flashcards.show', $flashcard->id) }}">{{ $flashcard->question }}</a></li>
-        @endforeach
-    </ul>
+    <header>
+        <div class="overlay">
+                <h1>Flashcards</h1>
+        </div>
+        </header>
+    <header>
+    <div class="overlay">
+        <div class="subject-chooser">
+            <ul>
+                @foreach ($flashcards as $flashcard)
+                        <li><a class="flashcard-link categorycard" href="{{ route('flashcards.show', $flashcard->id) }}">{{ $flashcard->id }}</a></li>
+                @endforeach
+            </ul>
+        </div>
+    </div>
+    </header>
 </x-app-layout>

@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-    <title>Lugx Gaming Template - Contact Page</title>
+    <title>AMC PODCLASS</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -51,27 +51,27 @@ https://templatemo.com/tm-589-lugx-gaming
                 <nav class="main-nav">
                     <!-- ***** Logo Start ***** -->
                     <a href="index.html" class="logo">
-                        <img src="assets/images/logo.png" alt="" style="width: 158px;">
+                        <h1><img src="assets/images/AMCLogo.png" alt="" style="width: 50px; height: auto;">&nbsp;AMC PODCLASS</h1>
                     </a>
                     <!-- ***** Logo End ***** -->
                     <!-- ***** Menu Start ***** -->
                     <ul class="nav">
-                        <li><a href="/Home" class="active">Home</a></li>
-                        <li><a href="/shop">Our Shop</a></li>
-                        <li><a href="/product">Product Details</a></li>
-                        <li><a href="/contact">Contact Us</a></li>
-                        @if (Route::has('login'))
-                        @auth
-                        <li><a href="{{ url('/dashboard') }}">Dashboard</a></li>
-                        @else
-                        <li><a href="{{ route('login') }}">Log in</a></li>
-                        <li>
-                          @if (Route::has('register'))
-                          <a href="{{ route('register') }}" class="ml-4 font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Register</a>
-                      @endif
-                      @endauth
-                  </li>
-                  @endif
+                        <li><a href="/">Home</a></li>
+                      <li><a href="/shop">About</a></li>
+                      <li><a href="/product">Programs</a></li>
+                      <li><a href="/contact" class="active">Contact Us</a></li>
+                      @if (Route::has('login'))
+                      @auth
+                      <li><a href="{{ url('/dashboard') }}">Dashboard</a></li>
+                      @else
+                      <li><a href="{{ route('login') }}">Log in</a></li>
+                      <li>
+                        @if (Route::has('register'))
+                        <a href="{{ route('register') }}" class="ml-4 font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Register</a>
+                    @endif
+                    @endauth
+                </li>
+                @endif
                   </ul>
                     <a class='menu-trigger'>
                         <span>Menu</span>
@@ -89,7 +89,7 @@ https://templatemo.com/tm-589-lugx-gaming
       <div class="row">
         <div class="col-lg-12">
           <h3>Contact Us</h3>
-          <span class="breadcrumb"><a href="#">Home</a>  >  Contact Us</span>
+          <span class="breadcrumb"><a href="/">Home</a>  >  Contact Us</span>
         </div>
       </div>
     </div>
@@ -104,11 +104,12 @@ https://templatemo.com/tm-589-lugx-gaming
               <h6>Contact Us</h6>
               <h2>Say Hello!</h2>
             </div>
-            <p>LUGX Gaming Template is based on the latest Bootstrap 5 CSS framework. This template is provided by TemplateMo and it is suitable for your gaming shop ecommerce websites. Feel free to use this for any purpose. Thank you.</p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
             <ul>
-              <li><span>Address</span> Sunny Isles Beach, FL 33160, United States</li>
-              <li><span>Phone</span> +123 456 7890</li>
-              <li><span>Email</span> lugx@contact.com</li>
+              <li><span>Address</span> Level 4 Vensu Place, Camaro St. Corner Pontiac 1118 Quezon City, Philippines
+              </li>
+              <li><span>Phone</span> +63917 149 6445</li>
+              <li><span>Email</span> contactus@ple-reap.com</li>
             </ul>
           </div>
         </div>

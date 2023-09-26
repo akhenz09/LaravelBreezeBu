@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-    <title>Lugx Gaming - Shop Page</title>
+    <title>AMC PODCLASS</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -51,27 +51,27 @@ https://templatemo.com/tm-589-lugx-gaming
                 <nav class="main-nav">
                     <!-- ***** Logo Start ***** -->
                     <a href="index.html" class="logo">
-                        <img src="assets/images/logo.png" alt="" style="width: 158px;">
+                        <h1><img src="assets/images/AMCLogo.png" alt="" style="width: 50px; height: auto;">&nbsp;AMC PODCLASS</h1>
                     </a>
                     <!-- ***** Logo End ***** -->
                     <!-- ***** Menu Start ***** -->
                     <ul class="nav">
-                        <li><a href="/Home" class="active">Home</a></li>
-                        <li><a href="/shop">Our Shop</a></li>
-                        <li><a href="/product">Product Details</a></li>
-                        <li><a href="/contact">Contact Us</a></li>
-                        @if (Route::has('login'))
-                        @auth
-                        <li><a href="{{ url('/dashboard') }}">Dashboard</a></li>
-                        @else
-                        <li><a href="{{ route('login') }}">Log in</a></li>
-                        <li>
-                          @if (Route::has('register'))
-                          <a href="{{ route('register') }}" class="ml-4 font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Register</a>
-                      @endif
-                      @endauth
-                  </li>
-                  @endif
+                        <li><a href="/">Home</a></li>
+                      <li><a href="/shop" class="active">About</a></li>
+                      <li><a href="/product" >Programs</a></li>
+                      <li><a href="/contact">Contact Us</a></li>
+                      @if (Route::has('login'))
+                      @auth
+                      <li><a href="{{ url('/dashboard') }}">Dashboard</a></li>
+                      @else
+                      <li><a href="{{ route('login') }}">Log in</a></li>
+                      <li>
+                        @if (Route::has('register'))
+                        <a href="{{ route('register') }}" class="ml-4 font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Register</a>
+                    @endif
+                    @endauth
+                </li>
+                @endif
                   </ul>
                     <a class='menu-trigger'>
                         <span>Menu</span>
@@ -88,8 +88,8 @@ https://templatemo.com/tm-589-lugx-gaming
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
-          <h3>Our Shop</h3>
-          <span class="breadcrumb"><a href="#">Home</a> > Our Shop</span>
+          <h3>About us</h3>
+          <span class="breadcrumb"><a href="/">Home</a> > About</span>
         </div>
       </div>
     </div>
@@ -102,168 +102,168 @@ https://templatemo.com/tm-589-lugx-gaming
           <a class="is_active" href="#!" data-filter="*">Show All</a>
         </li>
         <li>
-          <a href="#!" data-filter=".adv">Adventure</a>
+          <a href="#!" data-filter=".adv">OUR TUTORS</a>
         </li>
         <li>
-          <a href="#!" data-filter=".str">Strategy</a>
+          <a href="#!" data-filter=".str">TEAM</a>
         </li>
-        <li>
+        {{--<li>
           <a href="#!" data-filter=".rac">Racing</a>
-        </li>
+        </li>--}}
       </ul>
       <div class="row trending-box">
-        <div class="col-lg-3 col-md-6 align-self-center mb-30 trending-items col-md-6 adv">
+        <div class="col-lg-3 col-md-6 align-self-center mb-30 trending-items adv">
           <div class="item">
             <div class="thumb">
               <a href="product-details.html"><img src="assets/images/trending-01.jpg" alt=""></a>
-              <span class="price"><em>$36</em>$24</span>
+              {{--<span class="price"><em>$30</em>$20</span>--}}
             </div>
             <div class="down-content">
-              <span class="category">Action</span>
-              <h4>Assasin Creed</h4>
+              <span class="category">Hospital</span>
+              <h4>Tutor Name</h4>
               <a href="product-details.html"><i class="fa fa-shopping-bag"></i></a>
             </div>
           </div>
         </div>
-        <div class="col-lg-3 col-md-6 align-self-center mb-30 trending-items col-md-6 str">
+        <div class="col-lg-3 col-md-6 align-self-center mb-30 trending-items str">
           <div class="item">
             <div class="thumb">
               <a href="product-details.html"><img src="assets/images/trending-02.jpg" alt=""></a>
-              <span class="price"><em>$32</em>$22</span>
+               {{--<span class="price"><em>$30</em>$20</span>--}}
             </div>
             <div class="down-content">
-              <span class="category">Action</span>
-              <h4>Assasin Creed</h4>
+              <span class="category">Hospital</span>
+              <h4>Tutor Name</h4>
               <a href="product-details.html"><i class="fa fa-shopping-bag"></i></a>
             </div>
           </div>
         </div>
-        <div class="col-lg-3 col-md-6 align-self-center mb-30 trending-items col-md-6 adv rac">
+        <div class="col-lg-3 col-md-6 align-self-center mb-30 trending-items adv rac">
           <div class="item">
             <div class="thumb">
               <a href="product-details.html"><img src="assets/images/trending-03.jpg" alt=""></a>
-              <span class="price"><em>$45</em>$30</span>
+               {{--<span class="price"><em>$30</em>$20</span>--}}
             </div>
             <div class="down-content">
-              <span class="category">Action</span>
-              <h4>Assasin Creed</h4>
+              <span class="category">Hospital</span>
+              <h4>Tutor Name</h4>
               <a href="product-details.html"><i class="fa fa-shopping-bag"></i></a>
             </div>
           </div>
         </div>
-        <div class="col-lg-3 col-md-6 align-self-center mb-30 trending-items col-md-6 str">
+        <div class="col-lg-3 col-md-6 align-self-center mb-30 trending-items str">
           <div class="item">
             <div class="thumb">
               <a href="product-details.html"><img src="assets/images/trending-04.jpg" alt=""></a>
-              <span class="price"><em>$32</em>$22</span>
+              {{--<span class="price"><em>$30</em>$20</span>--}}
             </div>
             <div class="down-content">
-              <span class="category">Action</span>
-              <h4>Assasin Creed</h4>
+              <span class="category">Hospital</span>
+              <h4>Tutor Name</h4>
               <a href="product-details.html"><i class="fa fa-shopping-bag"></i></a>
             </div>
           </div>
         </div>
-        <div class="col-lg-3 col-md-6 align-self-center mb-30 trending-items col-md-6 rac str">
+        <div class="col-lg-3 col-md-6 align-self-center mb-30 trending-items rac str">
           <div class="item">
             <div class="thumb">
-              <a href="product-details.html"><img src="assets/images/trending-03.jpg" alt=""></a>
-              <span class="price"><em>$38</em>$26</span>
+              <a href="product-details.html"><img src="assets/images/trending-05.jpg" alt=""></a>
+               {{--<span class="price"><em>$30</em>$20</span>--}}
             </div>
             <div class="down-content">
-              <span class="category">Action</span>
-              <h4>Assasin Creed</h4>
+              <span class="category">Hospital</span>
+              <h4>Tutor Name</h4>
               <a href="product-details.html"><i class="fa fa-shopping-bag"></i></a>
             </div>
           </div>
         </div>
-        <div class="col-lg-3 col-md-6 align-self-center mb-30 trending-items col-md-6 rac adv">
+        <div class="col-lg-3 col-md-6 align-self-center mb-30 trending-items rac adv">
+          <div class="item">
+            <div class="thumb">
+              <a href="product-details.html"><img src="assets/images/trending-06.jpg" alt=""></a>
+              {{--<span class="price"><em>$30</em>$20</span>--}}
+            </div>
+            <div class="down-content">
+              <span class="category">Hospital</span>
+              <h4>Tutor Name</h4>
+              <a href="product-details.html"><i class="fa fa-shopping-bag"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 align-self-center mb-30 trending-items rac str">
+          <div class="item">
+            <div class="thumb">
+              <a href="product-details.html"><img src="assets/images/trending-07.jpg" alt=""></a>
+              {{--<span class="price"><em>$30</em>$20</span>--}}
+            </div>
+            <div class="down-content">
+              <span class="category">Hospital</span>
+              <h4>Tutor Name</h4>
+              <a href="product-details.html"><i class="fa fa-shopping-bag"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 align-self-center mb-30 trending-items rac adv">
+          <div class="item">
+            <div class="thumb">
+              <a href="product-details.html"><img src="assets/images/trending-08.jpg" alt=""></a>
+              {{--<span class="price"><em>$30</em>$20</span>--}}
+            </div>
+            <div class="down-content">
+              <span class="category">Hospital</span>
+              <h4>Tutor Name</h4>
+              <a href="product-details.html"><i class="fa fa-shopping-bag"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 align-self-center mb-30 trending-items adv rac">
           <div class="item">
             <div class="thumb">
               <a href="product-details.html"><img src="assets/images/trending-01.jpg" alt=""></a>
-              <span class="price"><em>$30</em>$20</span>
+              {{--<span class="price"><em>$30</em>$20</span>--}}
             </div>
             <div class="down-content">
-              <span class="category">Action</span>
-              <h4>Assasin Creed</h4>
+              <span class="category">Hospital</span>
+              <h4>Tutor Name</h4>
               <a href="product-details.html"><i class="fa fa-shopping-bag"></i></a>
             </div>
           </div>
         </div>
-        <div class="col-lg-3 col-md-6 align-self-center mb-30 trending-items col-md-6 rac str">
-          <div class="item">
-            <div class="thumb">
-              <a href="product-details.html"><img src="assets/images/trending-04.jpg" alt=""></a>
-              <span class="price"><em>$32</em>$22</span>
-            </div>
-            <div class="down-content">
-              <span class="category">Action</span>
-              <h4>Assasin Creed</h4>
-              <a href="product-details.html"><i class="fa fa-shopping-bag"></i></a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 align-self-center mb-30 trending-items col-md-6 rac adv">
+        <div class="col-lg-3 col-md-6 align-self-center mb-30 trending-items str">
           <div class="item">
             <div class="thumb">
               <a href="product-details.html"><img src="assets/images/trending-02.jpg" alt=""></a>
-              <span class="price"><em>$32</em>$22</span>
+              {{--<span class="price"><em>$30</em>$20</span>--}}
             </div>
             <div class="down-content">
-              <span class="category">Action</span>
-              <h4>Assasin Creed</h4>
+              <span class="category">Hospital</span>
+              <h4>Tutor Name</h4>
               <a href="product-details.html"><i class="fa fa-shopping-bag"></i></a>
             </div>
           </div>
         </div>
-        <div class="col-lg-3 col-md-6 align-self-center mb-30 trending-items col-md-6 adv rac">
+        <div class="col-lg-3 col-md-6 align-self-center mb-30 trending-items adv">
           <div class="item">
             <div class="thumb">
               <a href="product-details.html"><img src="assets/images/trending-03.jpg" alt=""></a>
-              <span class="price"><em>$28</em>$20</span>
+              {{--<span class="price"><em>$30</em>$20</span>--}}
             </div>
             <div class="down-content">
-              <span class="category">Action</span>
-              <h4>Assasin Creed</h4>
+              <span class="category">Hospital</span>
+              <h4>Tutor Name</h4>
               <a href="product-details.html"><i class="fa fa-shopping-bag"></i></a>
             </div>
           </div>
         </div>
-        <div class="col-lg-3 col-md-6 align-self-center mb-30 trending-items col-md-6 str">
+        <div class="col-lg-3 col-md-6 align-self-center mb-30 trending-items str">
           <div class="item">
             <div class="thumb">
               <a href="product-details.html"><img src="assets/images/trending-04.jpg" alt=""></a>
-              <span class="price"><em>$26</em>$18</span>
+              {{--<span class="price"><em>$30</em>$20</span>--}}
             </div>
             <div class="down-content">
-              <span class="category">Action</span>
-              <h4>Assasin Creed</h4>
-              <a href="product-details.html"><i class="fa fa-shopping-bag"></i></a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 align-self-center mb-30 trending-items col-md-6 adv">
-          <div class="item">
-            <div class="thumb">
-              <a href="product-details.html"><img src="assets/images/trending-01.jpg" alt=""></a>
-              <span class="price"><em>$32</em>$24</span>
-            </div>
-            <div class="down-content">
-              <span class="category">Action</span>
-              <h4>Assasin Creed</h4>
-              <a href="product-details.html"><i class="fa fa-shopping-bag"></i></a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 align-self-center mb-30 trending-items col-md-6 str">
-          <div class="item">
-            <div class="thumb">
-              <a href="product-details.html"><img src="assets/images/trending-02.jpg" alt=""></a>
-              <span class="price"><em>$45</em>$30</span>
-            </div>
-            <div class="down-content">
-              <span class="category">Action</span>
-              <h4>Assasin Creed</h4>
+              <span class="category">Hospital</span>
+              <h4>Tutor Name</h4>
               <a href="product-details.html"><i class="fa fa-shopping-bag"></i></a>
             </div>
           </div>

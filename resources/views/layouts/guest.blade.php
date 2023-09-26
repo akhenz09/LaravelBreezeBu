@@ -10,28 +10,10 @@
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">
         <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
-        <link rel="stylesheet" href="{{ asset('/resources/css/fontawesome.css') }}">
-        <link rel="stylesheet" href="{{ asset('/resources/css/templatemo-lugx-gaming.css') }}">
-        <link rel="stylesheet" href="{{ asset('/resources/css/owl.css') }}">
-        <link rel="stylesheet" href="{{ asset('/resources/css/animate.css') }}">
-        <link rel="stylesheet" href="{{ asset('/resources/css/https://unpkg.com/swiper@7/swiper-bundle.min.css') }}">
-
-        <script src="{{ asset('/resources/js/isotope.min.js') }}" defer></script>
-        <script src="{{ asset('/resources/js/owl-carousel.js') }}" defer></script>
-        <script src="{{ asset('/resources/js/counter.js') }}" defer></script>
-        <script src="{{ asset('/resources/js/custom.js') }}" defer></script>
-        <script src="{{ asset('/resources/js/bootstrap.min.js') }}" defer></script>
-        <script src="{{ asset('/resources/js/jquery.min.js') }}" defer></script>
-        <script src="{{ asset('/resources/js/jquery.js') }}" defer></script>
+       
 
         <!-- Scripts -->
-        @vite(['resources/css/app.css', 'resources/js/app.js', 'resources/css/landing.css', '/resources/css/fontawesome.css', '/resources/css/templatemo-lugx-gaming.css'
-        , '/resources/css/owl.css', '/resources/css/animate.css', 'https://unpkg.com/swiper@7/swiper-bundle.min.css', 'resources/js/isotope.min.js', 'resources/js/owl-carousel.js'
-        , 'resources/js/counter.js', 'resources/js/custom.js', 'resources/js/bootstrap.min.js', 'resources/jquery/jquery.min.js', 'resources/jquery/jquery.js'
-        , 'resources/jquery/jquery.slim.js', 'resources/jquery/jquery.slim.min.js'])
-
-
-
+        @vite(['resources/css/app.css', 'resources/js/app.js', 'resources/css/landing.css'])
 
 
 

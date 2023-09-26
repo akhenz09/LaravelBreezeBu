@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Models\User;
+use App\Models\ExamResult;
 use Illuminate\Http\Request;
 use Spatie\Permission\Models\Role;
 use App\Http\Controllers\Controller;
@@ -66,8 +67,9 @@ class UserController extends Controller
     public function destroy(User $user)
     {
         if ($user->hasRole('admin')) {
-            return back()->with('message', 'you are admin.');
+            return back()->with('message', 'You cannot delete the admin user.');
         }
+
         $user->delete();
 
         return back()->with('message', 'User deleted.');
@@ -80,4 +82,10 @@ class UserController extends Controller
 
         return redirect()->route('admin.users.index');
     }
+
+    public function viewResults()
+{
+    $results = ExamResult::with('user')->get();
+    return view('admin.view-results', compact('results'));
+}
 }
